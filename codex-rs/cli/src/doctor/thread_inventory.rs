@@ -5,10 +5,10 @@ use super::Config;
 use super::DoctorCheck;
 use super::DoctorIssue;
 use codex_history::RolloutItem;
-use codex_protocol::protocol::ThreadHistoryMode;
 use codex_protocol::protocol::InternalSessionSource;
 use codex_protocol::protocol::SessionSource;
 use codex_protocol::protocol::SubAgentSource;
+use codex_protocol::protocol::ThreadHistoryMode;
 use codex_state::ThreadStateAuditRow;
 use codex_utils_path::normalize_for_path_comparison;
 use std::collections::BTreeMap;
@@ -842,8 +842,8 @@ where
 mod tests {
     use super::*;
     use codex_history::RolloutLine;
-    use codex_protocol::protocol::HistoryPosition;
     use codex_protocol::ThreadId;
+    use codex_protocol::protocol::HistoryPosition;
     use codex_utils_absolute_path::test_support::PathExt;
     use pretty_assertions::assert_eq;
     use tempfile::TempDir;
